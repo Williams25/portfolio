@@ -1,8 +1,49 @@
 import * as S from "./styles";
 import { Container } from "../";
 import Image from "next/image";
+import { useCallback, useEffect, useState } from "react";
 
 export const Banner = () => {
+  const [loopNum, setLoopNum] = useState<number>(0);
+  const [isDeleting, setIsDeleting] = useState<boolean>(false);
+  const [text, setText] = useState<string>("");
+  const [delta, setDelta] = useState<number>(300 - Math.random() * 100);
+  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const period = 2000;
+
+  const tick = useCallback((): void => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(500);
+    }
+  }, [setText, setDelta, setLoopNum, setIsDeleting, text]);
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
   return (
     <S.Banner>
       <Container>
@@ -14,9 +55,9 @@ export const Banner = () => {
               {`Hi! I'm Willliam`}{" "}
               <span
                 className="txt-rotate"
-                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                data-rotate={JSON.stringify(toRotate)}
               >
-                <span className="wrap">{"text"}</span>
+                <span className="wrap">{text}</span>
               </span>
             </h1>
             <p>

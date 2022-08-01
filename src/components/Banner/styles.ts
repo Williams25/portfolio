@@ -10,6 +10,8 @@ export const Banner = styled.section`
     background-size: cover;
     background-repeat: no-repeat;
 
+
+
     & .container-banner {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -30,16 +32,45 @@ export const Banner = styled.section`
           margin-bottom: 16px;
           display: inline-block;
         }
+
+        & h1 {
+          font-size: 2.5rem;
+          line-height: 1;
+          margin-bottom: 0.5rem;
+        }
+
+        & p {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        & .txt-rotate > .wrap {
+          border-right: 0.1em solid ${theme.colors.grey_400};
+          padding-right: 0.2rem;
+        }
       }
 
       & .animate_image {
-        animation: slide-top 4s linear infinite;
+        animation: slide-top 5s linear infinite;
         display: flex;
         justify-content: center;
 
-        & img {
+        img {
           width: 500px;
           height: 500px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+        & .container-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 3rem;
+
+        & .animate_image {
+          animation: slide-top-mobile 5s linear infinite;
         }
       }
     }
@@ -55,5 +86,16 @@ export const Banner = styled.section`
         transform: translateY(0);
       }
     }
+    @keyframes slide-top-mobile {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+
   `}
 `;
