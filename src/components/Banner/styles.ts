@@ -78,6 +78,9 @@ export const Banner = styled.section`
         }
       }
     }
+    @media (max-width: 670px) {
+      padding: 320px 0 100px 0;
+    }
 
     @keyframes slide-top {
       0% {
