@@ -9,7 +9,7 @@ export const Banner = styled.section`
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    width: 100%;
 
 
     & .container-banner {
@@ -64,10 +64,14 @@ export const Banner = styled.section`
 
     @media (max-width: 768px) {
         & .container-banner {
-        display: grid;
-        grid-template-columns: 12fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         gap: 3rem;
+
+        & h1 {
+          height: 80px;
+        }
 
         & .animate_image {
           animation: slide-top-mobile 5s linear infinite;
