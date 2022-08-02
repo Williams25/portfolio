@@ -65,7 +65,7 @@ export const Banner = styled.section`
     @media (max-width: 768px) {
         & .container-banner {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 12fr;
         grid-template-rows: 1fr;
         gap: 3rem;
 
