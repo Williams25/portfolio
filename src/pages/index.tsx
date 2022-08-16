@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
-import { Banner } from "src/components";
+import { Banner, Skills } from "src/components";
+import { skillsMock } from "src/components/Skills/mock";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Banner />
+
+      <Skills skills={skillsMock} />
     </div>
   );
 };
