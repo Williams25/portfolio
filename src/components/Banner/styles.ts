@@ -54,6 +54,7 @@ export const Banner = styled.section`
         animation: slide-top 5s linear infinite;
         display: flex;
         justify-content: center;
+        z-index: 1;
 
         img {
           width: 500px;
