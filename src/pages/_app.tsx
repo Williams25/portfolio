@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { Header } from "src/components";
 import { GlobalStyle } from "src/styles/global";
 import theme from "src/styles/theme";
@@ -9,6 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Head>
+        <title>Portfolio - Williams25</title>
+      </Head>
       <Header />
       <Component {...pageProps} />
     </ThemeProvider>
