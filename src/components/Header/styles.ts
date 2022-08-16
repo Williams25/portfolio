@@ -1,11 +1,12 @@
 import styled, { css, DefaultTheme } from "styled-components";
+import { rgba } from "polished";
 
 type HeaderStyles = {
   scrolled: boolean;
 };
 
 const wrapperModifiersHeaderScrolled = (theme: DefaultTheme) => css`
-  background-color: ${theme.background.black_500};
+  background-color: ${rgba(theme.background.black_500, 0.9)};
   position: sticky;
   top: 0;
 `;
@@ -14,10 +15,10 @@ export const Header = styled.header<HeaderStyles>`
   ${({ theme, scrolled }) => css`
     width: 100%;
     padding: 1rem;
-    border-bottom: 1px solid ${theme.colors.white_200};
+    border-bottom: 1px solid ${rgba(theme.colors.white_200, 0.1)};
     background-color: transparent;
     transition: 0.3s ease-in-out;
-
+    z-index: 1001;
     ${scrolled && wrapperModifiersHeaderScrolled(theme)};
 
     & .content-header {
@@ -71,7 +72,6 @@ export const Header = styled.header<HeaderStyles>`
               width: 100%;
               height: 100%;
               border-radius: 50%;
-              border: 1px solid ${theme.colors.white};
               overflow: : hidden;
 
               &::before {
@@ -82,7 +82,7 @@ export const Header = styled.header<HeaderStyles>`
                   background-color: ${theme.background.white};
                   border-radius: 50%;
                   transform: scale(0);
-                  transition: 0.3s ease-in-out;
+                  transition: all 0.5s ease-in-out;
                   z-index: -1;
                 }
 
