@@ -64,7 +64,9 @@ export const Banner = styled.section`
     }
 
     @media (max-width: 768px) {
-        & .container-banner {
+      margin-top: -175px;
+
+      & .container-banner {
         display: flex;
         flex-direction: column;
         width: 100%;
