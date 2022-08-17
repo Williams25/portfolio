@@ -29,7 +29,7 @@ const wrapperModifiersButtonSize = {
     }
   `,
   medium: () => css`
-    padding: 10px 30px;
+    padding: 10px 25px;
     font-size: 0.975rem;
     & svg {
       font-size: 0.75rem;
