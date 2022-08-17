@@ -33,7 +33,7 @@ export type SkillsProps = {
 export const Skills = ({ skills }: SkillsProps) => {
   return (
     <S.Skills>
-      <Container id="skills">
+      <Container id="skills" data-aos="zoom-in-up">
         <h1>Skills</h1>
         <Carousel responsive={responsive} infinite={true} ssr={true}>
           {skills.map((sk) => (
