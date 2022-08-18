@@ -16,7 +16,7 @@ export const Skills = styled.section`
       position: absolute;
       background-image: url("/assets/img/color-sharp.png");
       background-repeat: no-repeat;
-      top: 70%;
+      top: 0;
       bottom: 0;
       left: 0;
       width: 100%;
