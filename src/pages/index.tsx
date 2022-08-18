@@ -15,12 +15,11 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Banner />
-      <div data-aos="zoom-in-up">
-        <Skills skills={skillsMock} />
-      </div>
-    </div>
+
+      <Skills skills={skillsMock} />
+    </>
   );
 };
 
