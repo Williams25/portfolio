@@ -4,3 +4,6 @@ export { Banner } from "./Banner";
 export { Container } from "./Container";
 export { Skills } from "./Skills";
 export { AnimatedCircularProgress } from "./AnimatedCircularProgress";
+export { Contact } from "./Contact";
+export { Input } from "./Input";
+export { TextArea } from "./TextArea";
