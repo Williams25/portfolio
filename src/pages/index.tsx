@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Banner, Skills } from "src/components";
+import { Banner, Contact, Skills } from "src/components";
 import { skillsMock } from "src/components/Skills/mock";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,6 +19,8 @@ const Home: NextPage = () => {
       <Banner />
 
       <Skills skills={skillsMock} />
+
+      <Contact />
     </>
   );
 };
