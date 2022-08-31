@@ -1,5 +1,6 @@
 const theme = {
   colors: {
+    blue: "#4a2fbd",
     blue_200: "#3399ff",
     blue_300: "#0D6EFD",
     blue_400: "#001e3c",
@@ -14,7 +15,8 @@ const theme = {
     black: "#000000",
     black_500: "#121212",
     black_800: "#000000E6",
-    grey_400: "#B8B8B8"
+    grey_400: "#B8B8B8",
+    pink: "#aa367c"
   },
   background: {
     white: "#FFFFFF",
