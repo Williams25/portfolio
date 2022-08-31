@@ -2,13 +2,15 @@ import styled, { css } from "styled-components";
 
 export const Skills = styled.section`
   ${({ theme }) => css`
+    padding: 60px 50px;
+
     #skills {
       position: relative;
       background: ${theme.background.black_600};
       border-radius: 64px;
       text-align: center;
       padding: 60px 50px;
-      margin-top: -60px;
+      margin-top: -120px;
     }
 
     &::after {
