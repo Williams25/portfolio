@@ -97,6 +97,8 @@ export const Header = () => {
                   borderColor="#2894ff"
                   title="contact"
                   size="medium"
+                  as="a"
+                  href="#contact"
                 />
               </li>
             </ul>
