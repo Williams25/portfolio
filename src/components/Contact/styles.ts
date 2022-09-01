@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Contact = styled.div`
   ${({ theme }) => css`
     background: linear-gradient(
-      90.21deg,
+      45.21deg,
       ${theme.colors.pink} -5.91%,
       ${theme.colors.blue} 111.58%
     );
@@ -14,6 +14,11 @@ export const Contact = styled.div`
       align-items: flex-start;
       justify-content: flex-start;
       gap: 1rem;
+
+      & > div {
+        display: flex;
+        justify-content: center;
+      }
 
       @media (max-width: 768px) {
         grid-template-columns: 1fr;

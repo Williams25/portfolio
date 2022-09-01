@@ -6,15 +6,17 @@ import * as S from "./styles";
 export const Contact = () => {
   return (
     <S.Contact id="contact">
-      <Container className="contact-container" data-aos="zoom-in-up">
-        <Image
-          src="/assets/img/files-sent-not-css.svg"
-          alt="..."
-          width={400}
-          height={500}
-        />
+      <Container className="contact-container">
+        <div data-aos="fade-right">
+          <Image
+            src="/assets/img/files-sent-not-css.svg"
+            alt="..."
+            width={500}
+            height={500}
+          />
+        </div>
 
-        <div>
+        <div data-aos="fade-left">
           <form>
             <h1>Get In Touch</h1>
             <div className="input-group">
