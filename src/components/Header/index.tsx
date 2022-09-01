@@ -60,22 +60,27 @@ export const Header = () => {
             <ul>
               <li>
                 <Link href="#">
-                  <a>Home</a>
+                  <a draggable={false}>Home</a>
                 </Link>
               </li>
               <li>
                 <Link href="#skills">
-                  <a>Skills</a>
+                  <a draggable={false}>Skills</a>
                 </Link>
               </li>
               <li>
                 <Link href="#skills">
-                  <a>Projects</a>
+                  <a draggable={false}>Projects</a>
                 </Link>
               </li>
               <li>
                 <Link href="https://github.com/Williams25">
-                  <a aria-label="go to Github" target="_blank" className="icon">
+                  <a
+                    aria-label="go to Github"
+                    target="_blank"
+                    className="icon"
+                    draggable={false}
+                  >
                     <FaGithub size={25} />
                   </a>
                 </Link>
@@ -86,6 +91,7 @@ export const Header = () => {
                     aria-label="go to LinkedinIn"
                     target="_blank"
                     className="icon"
+                    draggable={false}
                   >
                     <FaLinkedinIn size={25} />
                   </a>
@@ -99,6 +105,8 @@ export const Header = () => {
                   size="medium"
                   as="a"
                   href="#contact"
+                  className="icon"
+                  draggable={false}
                 />
               </li>
             </ul>
@@ -124,17 +132,17 @@ export const Header = () => {
             <ul>
               <li>
                 <Link href="#">
-                  <a>Home</a>
+                  <a draggable={false}>Home</a>
                 </Link>
               </li>
               <li>
                 <Link href="#skills">
-                  <a>Skills</a>
+                  <a draggable={false}>Skills</a>
                 </Link>
               </li>
               <li>
                 <Link href="#skills">
-                  <a>Projects</a>
+                  <a draggable={false}>Projects</a>
                 </Link>
               </li>
             </ul>

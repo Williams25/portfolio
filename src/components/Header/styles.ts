@@ -70,6 +70,7 @@ export const Header = styled.header<HeaderStyles>`
           display: flex;
           gap: 1rem;
           list-style: none;
+          user-select: none;
 
           & li {
             transition: 0.5s;
