@@ -18,16 +18,17 @@ export const Input = styled.div`
       letter-spacing: 0.1px;
     }
     & span {
+      background-color: ${theme.colors.blue_700};
       position: absolute;
       left: 0;
-      padding: 10px;
+      padding: 5px 10px;
       font-size: 1em;
       pointer-events: none;
       text-transform: uppercase;
       transition: all 0.2s linear;
       transition-delay: 0;
       color: ${theme.colors.white};
-      transform: translateX(10px);
+      transform: translateX(10px) translateY(5px);
     }
 
     & input:valid ~ span,
