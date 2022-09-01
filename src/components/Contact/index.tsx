@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 export const Contact = () => {
   return (
-    <S.Contact>
+    <S.Contact id="contact">
       <Container className="contact-container" data-aos="zoom-in-up">
         <Image
           src="/assets/img/files-sent-not-css.svg"
