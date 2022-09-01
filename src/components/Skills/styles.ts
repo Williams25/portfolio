@@ -4,6 +4,13 @@ export const Skills = styled.section`
   ${({ theme }) => css`
     padding: 60px 50px;
 
+    @media (max-width: 768px) {
+      &,
+      #skills {
+        padding: 30px 16px;
+      }
+    }
+
     #skills {
       position: relative;
       background: ${theme.background.black_600};

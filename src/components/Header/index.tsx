@@ -30,7 +30,12 @@ export const Header = () => {
   return (
     <S.Header scrolled={scrolled}>
       <Container className="content-header">
-        <button type="button" onClick={toggleMenu} className="burguer-menu">
+        <button
+          type="button"
+          aria-label="open mobile menu"
+          onClick={toggleMenu}
+          className="burguer-menu"
+        >
           <MdOutlineMenu size={25} />
         </button>
 
