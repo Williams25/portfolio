@@ -75,14 +75,18 @@ export const Header = () => {
               </li>
               <li>
                 <Link href="https://github.com/Williams25">
-                  <a target="_blank" className="icon">
+                  <a aria-label="go to Github" target="_blank" className="icon">
                     <FaGithub size={25} />
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="https://www.linkedin.com/in/william-gabriel-291a031b4/">
-                  <a target="_blank" className="icon">
+                  <a
+                    aria-label="go to LinkedinIn"
+                    target="_blank"
+                    className="icon"
+                  >
                     <FaLinkedinIn size={25} />
                   </a>
                 </Link>
