@@ -151,11 +151,14 @@ export const MenuMobile = styled.div<MenuMobileStyle>`
         max-width: 250px;
       }
 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 1rem;
+      & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+      }
 
       & nav {
         width: 100%;
