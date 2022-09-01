@@ -18,10 +18,10 @@ export const Contact = () => {
           <form>
             <h1>Get In Touch</h1>
             <div className="input-group">
-              <Input label="Full name" />
-              <Input label="Email" />
+              <Input type="text" label="Full name" />
+              <Input type="email" label="Email" />
             </div>
-            <TextArea label="Email" />
+            <TextArea label="Description" />
             <div>
               <Button
                 title="Submit"
