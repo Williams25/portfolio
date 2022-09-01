@@ -31,7 +31,7 @@ export const AnimatedCircularProgress = ({
           </svg>
 
           <div className="content">
-            <Image src={imageSrc} alt={label} width={70} height={70} />
+            <Image src={imageSrc} alt={label} width={70} height={70} priority />
           </div>
         </div>
       </div>
