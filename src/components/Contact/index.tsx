@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Container } from "../Container";
-import { Input } from "../Input";
-import { TextArea } from "../TextArea";
+import { Container, Input, TextArea, Button } from "..";
+
 import * as S from "./styles";
 
 export const Contact = () => {
@@ -23,6 +22,17 @@ export const Contact = () => {
               <Input label="Email" />
             </div>
             <TextArea label="Email" />
+            <div>
+              <Button
+                title="Submit"
+                variant="dark"
+                size="medium"
+                borderColor="#FFFFFF"
+                style={{
+                  background: "#151515"
+                }}
+              />
+            </div>
           </form>
         </div>
       </Container>
