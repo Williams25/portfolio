@@ -46,6 +46,7 @@ export const Button = styled.button<ButtonProps>`
     cursor: pointer;
     position: relative;
     display: inline-block;
+    user-select: none;
 
     text-transform: capitalize;
     letter-spacing: 0.2em;
