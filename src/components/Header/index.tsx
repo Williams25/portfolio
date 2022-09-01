@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineMenu } from "react-icons/md";
 import { RiCloseLine } from "react-icons/ri";
 import * as S from "./styles";
+import Link from "next/link";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -45,23 +46,33 @@ export const Header = () => {
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link href="#">
+                  <a>Home</a>
+                </Link>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <Link href="#skills">
+                  <a>Skills</a>
+                </Link>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <Link href="#skills">
+                  <a>Projects</a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="icon">
-                  <FaGithub size={25} />
-                </a>
+                <Link href="https://github.com/Williams25">
+                  <a target="_blank" className="icon">
+                    <FaGithub size={25} />
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="icon">
-                  <FaLinkedinIn size={25} />
-                </a>
+                <Link href="https://www.linkedin.com/in/william-gabriel-291a031b4/">
+                  <a target="_blank" className="icon">
+                    <FaLinkedinIn size={25} />
+                  </a>
+                </Link>
               </li>
               <li>
                 <Button
