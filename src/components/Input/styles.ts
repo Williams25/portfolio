@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Input = styled.div`
+export const Input = styled.label`
   ${({ theme }) => css`
     position: relative;
     width: 100%;

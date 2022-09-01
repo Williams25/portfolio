@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const TextArea = styled.div`
+export const TextArea = styled.label`
   ${({ theme }) => css`
     position: relative;
     width: 100%;

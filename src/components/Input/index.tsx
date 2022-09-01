@@ -7,7 +7,7 @@ export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 
 export const Input = ({ label, ...rest }: InputProps) => {
   return (
-    <S.Input>
+    <S.Input htmlFor={label.replace(/ /g, "")}>
       <input {...rest} required />
       <span>{label}</span>
       <i />
