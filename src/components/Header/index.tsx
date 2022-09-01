@@ -28,6 +28,19 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    window.addEventListener(
+      "keydown",
+      (e) => e.code === "Escape" && setOpenMenu(false)
+    );
+
+    return () =>
+      window.removeEventListener(
+        "keydown",
+        (e) => openMenu && e.code === "Escape" && setOpenMenu(false)
+      );
+  }, []);
+
   return (
     <S.Header scrolled={scrolled}>
       <Container className="content-header">
@@ -87,7 +100,11 @@ export const Header = () => {
         </div>
       </Container>
 
-      <S.MenuMobile show={openMenu}>
+      <S.MenuMobile
+        show={openMenu}
+        aria-hidden={openMenu}
+        aria-expanded={openMenu}
+      >
         <div className="menu-mobile">
           <button
             type="button"
@@ -98,13 +115,23 @@ export const Header = () => {
           </button>
 
           <nav>
-            <a href="#">Home</a>
-          </nav>
-          <nav>
-            <a href="#skills">Skills</a>
-          </nav>
-          <nav>
-            <a href="#">Projects</a>
+            <ul>
+              <li>
+                <Link href="#">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#skills">
+                  <a>Skills</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#skills">
+                  <a>Projects</a>
+                </Link>
+              </li>
+            </ul>
           </nav>
         </div>
         <span className="overlay" onClick={toggleMenu} />
