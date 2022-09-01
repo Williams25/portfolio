@@ -9,7 +9,7 @@ export const TextArea = styled.div`
       width: 100%;
       height: 160px;
       padding: 10px;
-      border: 1.5px solid ${theme.colors.blue_200};
+      border: 1.5px solid ${theme.background.white_200};
       background-color: ${theme.colors.blue_700};
       color: ${theme.colors.white};
       border-radius: 4px;
@@ -56,14 +56,14 @@ export const TextArea = styled.div`
       font-size: 0.65em;
       padding: 0 10px;
       font-weight: 500;
-      border-left: 1.5px solid ${theme.colors.blue_300};
-      border-right: 1.5px solid ${theme.colors.blue_300};
+      border-left: 1.5px solid ${theme.colors.white};
+      border-right: 1.5px solid ${theme.colors.white};
       letter-spacing: 0.2em;
     }
 
     & textarea:valid,
     & textarea:focus {
-      border: 1.5px solid ${theme.colors.blue_300};
+      border: 1.5px solid ${theme.colors.white};
     }
   `}
 `;
