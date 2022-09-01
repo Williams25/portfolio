@@ -7,11 +7,7 @@ export const Contact = () => {
   return (
     <S.Contact id="contact">
       <Container className="contact-container">
-        <div
-          data-aos="fade-right"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
+        <div data-aos="fade-right" data-aos-offset="500" data-aos-delay="500">
           <Image
             src="/assets/img/files-sent-not-css.svg"
             alt="..."
@@ -20,7 +16,7 @@ export const Contact = () => {
           />
         </div>
 
-        <div data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
+        <div data-aos="fade-left" data-aos-offset="500" data-aos-delay="500">
           <form>
             <h1>Get In Touch</h1>
             <div className="input-group">

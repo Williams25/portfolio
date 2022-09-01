@@ -36,7 +36,7 @@ export const Skills = ({ skills }: SkillsProps) => {
       <Container
         id="skills"
         data-aos="zoom-in"
-        data-aos-offset="500"
+        data-aos-delay="500"
         data-aos-duration="500"
       >
         <h1>Skills</h1>
