@@ -18,6 +18,20 @@ export const TextArea = styled.div`
       transition: border 0.2s linear;
       resize: none;
       letter-spacing: 0.1px;
+      scroll-padding: 4px;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px ${theme.colors.blue_700};
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: ${theme.colors.blue_200};
+        border-radius: 4px;
+      }
     }
     & span {
       position: absolute;
