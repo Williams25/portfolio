@@ -137,10 +137,7 @@ export const MenuMobile = styled.div<MenuMobileStyle>`
       max-width: 350px;
       width: 100%;
       height: 100%;
-      background-image: url("/assets/img/banner-bg.png");
-      background-position: top center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: ${theme.background.blue_900};
       box-shadow: 0 0 5px ${theme.colors.blue_900},
         0 0 5px ${theme.colors.blue_900};
       padding: 1rem;
