@@ -1,11 +1,16 @@
 import styled, { css } from "styled-components";
 
 export const Contact = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     background: linear-gradient(
-      45.21deg,
-      ${theme.colors.pink} -5.91%,
-      ${theme.colors.blue} 111.58%
+      to right top,
+      #321023,
+      #2d1127,
+      #27122b,
+      #20142d,
+      #17152f,
+      #101831,
+      #071a31
     );
     & .contact-container {
       padding: 4rem 0;
