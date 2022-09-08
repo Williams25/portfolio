@@ -5,6 +5,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import { RiCloseLine } from "react-icons/ri";
 import * as S from "./styles";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -53,7 +54,13 @@ export const Header = () => {
           <MdOutlineMenu size={25} />
         </button>
 
-        <div className="logo">logo</div>
+        <div className="logo">
+          <Link href="/#">
+            <a>
+              <Image src="/assets/img/logo.svg" alt="" width={85} height={24} />
+            </a>
+          </Link>
+        </div>
 
         <div className="menu-items">
           <nav>

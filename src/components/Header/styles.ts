@@ -35,14 +35,32 @@ export const Header = styled.header<HeaderStyles>`
         color: ${theme.colors.white};
         transition: 0.3s ease-in-out;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &:hover {
           filter: brightness(0.8);
+        }
+
+        @media (min-width: 870px) {
+          display: none;
         }
       }
 
       & .logo {
         max-width: 150px;
         width: 100%;
+
+        & a {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        & img {
+          cursor: pointer;
+        }
       }
       & .menu-items {
         display: flex;
@@ -120,7 +138,10 @@ export const MenuMobile = styled.div<MenuMobileStyle>`
     }
 
     & .close-burguer-menu {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       margin-left: auto;
       background: transparent;
       border: 0;
