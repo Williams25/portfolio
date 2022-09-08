@@ -38,8 +38,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-          <link rel="shortcut icon" href="/img/icon-512.png" />
-          <link rel="apple-touch-icon" href="/img/icon-512.png" />
+          <link rel="icon" href="/assets/img/fav.svg" />
+          <link rel="icon" href="/assets/img/fav.svg" />
+          <link rel="apple-touch-icon" href="/assets/img/fav.png" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="description" content="Portfolio - Williams25" />
         </Head>
