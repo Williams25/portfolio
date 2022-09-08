@@ -22,6 +22,7 @@ const theme = {
     white: "#FFFFFF",
     white_100: "#FFFFFF1A",
     white_200: "#D9D9D91A",
+    blue_900: "#071630",
     black: "#000000",
     black_500: "#121212",
     black_600: "#151515",
