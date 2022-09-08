@@ -27,11 +27,16 @@ export const Contact = styled.div`
 
       @media (max-width: 768px) {
         grid-template-columns: 1fr;
+
+        & div:first-child {
+          display: none;
+        }
       }
 
       & img {
         transition: all 0.2s linear;
-        animation: toUpAndDown 5s linear forwards infinite;
+        /* animation: toUpAndDown 5s linear forwards infinite; */
+        transform: translateY(-80px);
         max-width: 400px;
         object-fit: contain;
         pointer-events: none;
