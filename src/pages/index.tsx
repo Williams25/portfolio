@@ -4,13 +4,13 @@ import { skillsMock } from "src/components/Skills/mock";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <main role="main">
       <Banner />
 
       <Skills skills={skillsMock} />
 
       <Contact />
-    </>
+    </main>
   );
 };
 
