@@ -11,7 +11,6 @@ export const Banner = styled.section`
     background-repeat: no-repeat;
     width: 100%;
 
-
     & .container-banner {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -45,8 +44,10 @@ export const Banner = styled.section`
         }
 
         & .txt-rotate > .wrap {
-          border-right: 0.1em solid ${theme.colors.grey_400};
+          border-right: 0.1em solid;
+          border-color: ${theme.colors.grey_400};
           padding-right: 0.2rem;
+          line-height: 48px;
         }
       }
 
@@ -106,6 +107,6 @@ export const Banner = styled.section`
       100% {
         transform: translateY(0);
       }
-
+    }
   `}
 `;
