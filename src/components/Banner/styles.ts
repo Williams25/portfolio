@@ -81,8 +81,17 @@ export const Banner = styled.section`
         }
       }
     }
+
     @media (max-width: 670px) {
       padding: 320px 0 100px 0;
+    }
+
+    @media (max-width: 430px) {
+      & .container-banner {
+        & h1 {
+          min-height: 110px;
+        }
+      }
     }
 
     @keyframes slide-top {
