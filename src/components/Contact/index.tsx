@@ -9,10 +9,10 @@ export const Contact = () => {
       <Container className="contact-container">
         <div>
           <Image
-            src="/assets/img/files-sent-not-css.svg"
-            alt="..."
-            width={500}
-            height={500}
+            src="/assets/img/Programming-amico.svg"
+            alt="image illustrates a programmer programming"
+            width={600}
+            height={600}
           />
         </div>
 
