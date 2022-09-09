@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Banner, Contact, Skills } from "src/components";
+import { Banner, Contact, Skills, Projects } from "src/components";
 import { skillsMock } from "src/components/Skills/mock";
 
 const Home: NextPage = () => {
@@ -8,6 +8,8 @@ const Home: NextPage = () => {
       <Banner />
 
       <Skills skills={skillsMock} />
+
+      <Projects />
 
       <Contact />
     </main>
