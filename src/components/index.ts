@@ -7,3 +7,5 @@ export { AnimatedCircularProgress } from "./AnimatedCircularProgress";
 export { Contact } from "./Contact";
 export { Input } from "./Input";
 export { TextArea } from "./TextArea";
+export { Footer } from "./Footer";
+export { Projects } from "./Projects";
