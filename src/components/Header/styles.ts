@@ -14,7 +14,7 @@ const wrapperModifiersHeaderScrolled = (theme: DefaultTheme) => css`
 export const Header = styled.header<HeaderStyles>`
   ${({ theme, scrolled }) => css`
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     border-bottom: 1px solid ${rgba(theme.colors.white_200, 0.1)};
     background-color: transparent;
     transition: 0.3s ease-in-out;
@@ -101,7 +101,7 @@ export const Header = styled.header<HeaderStyles>`
         }
 
         @media (max-width: 870px) {
-          & ul li a:not(.icon) {
+          & ul li:not(.icon) {
             display: none;
           }
         }

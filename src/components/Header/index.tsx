@@ -80,31 +80,29 @@ export const Header = () => {
                   <a draggable={false}>Projects</a>
                 </Link>
               </li>
-              <li>
+              <li className="icon">
                 <Link href="https://github.com/Williams25">
                   <a
                     aria-label="go to Github"
                     target="_blank"
-                    className="icon"
                     draggable={false}
                   >
                     <FaGithub size={25} />
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className="icon">
                 <Link href="https://www.linkedin.com/in/william-gabriel-291a031b4/">
                   <a
                     aria-label="go to LinkedinIn"
                     target="_blank"
-                    className="icon"
                     draggable={false}
                   >
                     <FaLinkedinIn size={25} />
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className="icon">
                 <Button
                   variant="dark"
                   borderColor="#2894ff"
@@ -112,7 +110,6 @@ export const Header = () => {
                   size="medium"
                   as="a"
                   href="#contact"
-                  className="icon"
                   draggable={false}
                 />
               </li>
