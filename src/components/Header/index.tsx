@@ -56,8 +56,13 @@ export const Header = () => {
 
         <div className="logo">
           <Link href="/#">
-            <a>
-              <Image src="/assets/img/logo.svg" alt="" width={85} height={24} />
+            <a aria-label="portfolio logo <wg />">
+              <Image
+                src="/assets/img/logo.svg"
+                alt="portfolio logo <wg />"
+                width={85}
+                height={24}
+              />
             </a>
           </Link>
         </div>
@@ -76,7 +81,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#skills">
+                <Link href="#projects">
                   <a draggable={false}>Projects</a>
                 </Link>
               </li>
@@ -145,7 +150,7 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#skills">
+                <Link href="#projects">
                   <a draggable={false}>Projects</a>
                 </Link>
               </li>
