@@ -47,7 +47,6 @@ export const Banner = styled.section`
           border-right: 0.1em solid;
           border-color: ${theme.colors.grey_400};
           padding-right: 0.2rem;
-          line-height: 48px;
         }
       }
 
@@ -74,7 +73,7 @@ export const Banner = styled.section`
         gap: 3rem;
 
         & h1 {
-          height: 80px;
+          min-height: 80px;
         }
 
         & .animate_image {
