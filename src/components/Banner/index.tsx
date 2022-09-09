@@ -52,7 +52,7 @@ export const Banner = () => {
             <span className="tagline">Welcome to my Portfolio</span>
 
             <h1>
-              {`Hi! I'm Willliam`}{" "}
+              {`Hi there 👋, I'm Willliam`}{" "}
               <span
                 className="txt-rotate"
                 data-rotate={JSON.stringify(toRotate)}
@@ -66,13 +66,12 @@ export const Banner = () => {
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
           </div>
 
           <div className={"animate_image"}>
             <Image
               src={"/assets/img/header-img.svg"}
-              alt="Header Img"
+              alt="image illustrates an astronaut"
               width={500}
               height={500}
             />
