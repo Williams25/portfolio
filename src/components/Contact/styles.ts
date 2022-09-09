@@ -36,10 +36,9 @@ export const Contact = styled.div`
       & img {
         transition: all 0.2s linear;
         /* animation: toUpAndDown 5s linear forwards infinite; */
-        transform: translateY(-80px);
-        max-width: 400px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
-        pointer-events: none;
       }
 
       & form {
