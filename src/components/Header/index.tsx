@@ -6,10 +6,13 @@ import { RiCloseLine } from "react-icons/ri";
 import * as S from "./styles";
 import Link from "next/link";
 import Image from "next/image";
+import { useAnalytics } from "src/hooks/useAnalytics";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+
+  const { viewGithub, viewLinkedin } = useAnalytics();
 
   const toggleMenu = useCallback(() => {
     setOpenMenu((o) => !o);
@@ -91,6 +94,7 @@ export const Header = () => {
                     aria-label="go to Github"
                     target="_blank"
                     draggable={false}
+                    onClick={viewGithub}
                   >
                     <FaGithub size={25} />
                   </a>
@@ -102,6 +106,7 @@ export const Header = () => {
                     aria-label="go to LinkedinIn"
                     target="_blank"
                     draggable={false}
+                    onClick={viewLinkedin}
                   >
                     <FaLinkedinIn size={25} />
                   </a>

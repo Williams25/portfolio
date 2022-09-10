@@ -3,8 +3,11 @@ import { Container } from "..";
 import Link from "next/link";
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useAnalytics } from "src/hooks/useAnalytics";
 
 export const Footer = () => {
+  const { viewGithub, viewLinkedin } = useAnalytics();
+
   return (
     <S.Footer>
       <Container className="container-footer">
@@ -24,7 +27,12 @@ export const Footer = () => {
         <div className="info-footer">
           <div className="social-media">
             <Link href="https://github.com/Williams25">
-              <a aria-label="go to Github" target="_blank" draggable={false}>
+              <a
+                aria-label="go to Github"
+                target="_blank"
+                draggable={false}
+                onClick={viewGithub}
+              >
                 <FaGithub size={30} />
               </a>
             </Link>
@@ -34,6 +42,7 @@ export const Footer = () => {
                 aria-label="go to LinkedinIn"
                 target="_blank"
                 draggable={false}
+                onClick={viewLinkedin}
               >
                 <FaLinkedinIn size={30} />
               </a>
