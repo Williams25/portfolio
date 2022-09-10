@@ -36,13 +36,18 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="pt-br">
+      <Html lang="en-US">
         <Head>
+          <meta charSet="UTF-8" />
+          <meta property="og:title" content="Portfolio - Williams25" />
+          <meta property="og:description" content="Portfolio - Williams25" />
+          <meta name="description" content="Portfolio - Williams25" />
+          <meta property="og:image" content="/assets/img/logo.svg" />
+
           <link rel="icon" href="/assets/img/fav.svg" />
           <link rel="icon" href="/assets/img/fav.svg" />
           <link rel="apple-touch-icon" href="/assets/img/fav.png" />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="description" content="Portfolio - Williams25" />
         </Head>
         <body>
           <Main />
