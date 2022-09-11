@@ -57,7 +57,9 @@ export const Banner = () => {
                 className="txt-rotate"
                 data-rotate={JSON.stringify(toRotate)}
               >
-                <span className="wrap">{text}</span>
+                <span className="wrap" translate="no">
+                  {text}
+                </span>
               </span>
             </h1>
             <p>
