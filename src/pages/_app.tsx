@@ -5,7 +5,7 @@ import { Header, Footer } from "src/components";
 import { GlobalStyle } from "src/styles/global";
 import theme from "src/styles/theme";
 import { ThemeProvider } from "styled-components";
-import { AnalyticsProvider } from "src/_contexts/AnalyticsProvider";
+import { AnalyticsProvider } from "src/contexts/AnalyticsProvider";
 import { client } from "src/graphql/apollo";
 import { ApolloProvider } from "@apollo/client";
 
