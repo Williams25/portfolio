@@ -3,12 +3,20 @@ import { Container } from "../";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
-export const Banner = () => {
+export type BannerProps = {
+  title: string;
+  rotateText: {
+    text: string;
+  }[];
+  description: { text: string };
+};
+
+export const Banner = ({ rotateText, title, description }: BannerProps) => {
   const [loopNum, setLoopNum] = useState<number>(0);
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
   const [text, setText] = useState<string>("");
   const [delta, setDelta] = useState<number>(300 - Math.random() * 100);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = rotateText.map((item) => item.text);
   const period = 2000;
 
   const tick = useCallback((): void => {
@@ -52,7 +60,7 @@ export const Banner = () => {
             <span className="tagline">Welcome to my Portfolio</span>
 
             <h1>
-              {`Hi there 👋, I'm Willliam`}{" "}
+              {title}{" "}
               <span
                 className="txt-rotate"
                 data-rotate={JSON.stringify(toRotate)}
@@ -62,12 +70,7 @@ export const Banner = () => {
                 </span>
               </span>
             </h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+            <p>{description.text}</p>
           </div>
 
           <div className={"animate_image"}>
