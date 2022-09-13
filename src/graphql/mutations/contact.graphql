@@ -1,0 +1,9 @@
+mutation Contact($email: String, $name: String, $description: String) {
+  createContact(
+    data: { email: $email, name: $name, description: $description }
+  ) {
+    description
+    email
+    name
+  }
+}
