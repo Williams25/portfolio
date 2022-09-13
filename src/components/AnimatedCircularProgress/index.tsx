@@ -3,16 +3,18 @@ import * as S from "./styles";
 
 export type AnimatedCircularProgressProps = {
   percent: number;
-  imageSrc: string;
-  backgroundProgress: string;
-  label: string;
+  image: { url: string };
+  backgroundProgress: {
+    hex: string;
+  };
+  name: string;
 };
 
 export const AnimatedCircularProgress = ({
   percent = 75,
   backgroundProgress,
-  imageSrc,
-  label
+  image,
+  name
 }: AnimatedCircularProgressProps) => {
   const totalPercent = 440 - (440 * percent) / 100;
 
@@ -31,7 +33,7 @@ export const AnimatedCircularProgress = ({
           </svg>
 
           <div className="content">
-            <Image src={imageSrc} alt={label} width={70} height={70} priority />
+            <Image src={image.url} alt={name} width={70} height={70} priority />
           </div>
         </div>
       </div>
