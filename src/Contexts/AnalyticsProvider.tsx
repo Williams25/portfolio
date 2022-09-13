@@ -27,7 +27,7 @@ export const AnalyticsContext = createContext({} as AnalyticsData);
 
 export const AnalyticsProvider = ({ children }: AnalyticsProviderProps) => {
   const initializeAnalytics = useCallback(() => {
-    ReactGA.initialize("G-J8PYKQBWQF");
+    ReactGA.initialize(process.env.NEXT_PUBLIC_ANALYTICS_KEY!);
   }, [ReactGA]);
 
   const pageView = useCallback(() => {
