@@ -3,44 +3,58 @@ import { AnimatedCircularProgressProps } from "../AnimatedCircularProgress";
 export const skillsMock: AnimatedCircularProgressProps[] = [
   {
     percent: 50,
-    backgroundProgress: "#e55000",
-    imageSrc: "/assets/img/html.png",
-    label: "HTML"
+    backgroundProgress: {
+      hex: "#e55000"
+    },
+    image: { url: "/assets/img/html.png" },
+    name: "HTML"
   },
   {
     percent: 50,
-    backgroundProgress: "#009de5",
-    imageSrc: "/assets/img/css.png",
-    label: "CSS"
+    backgroundProgress: {
+      hex: "#009de5"
+    },
+    image: { url: "/assets/img/css.png" },
+    name: "CSS"
   },
   {
     percent: 50,
-    backgroundProgress: "#fed600",
-    imageSrc: "/assets/img/javascript.png",
-    label: "Javascript"
+    backgroundProgress: {
+      hex: "#fed600"
+    },
+    image: { url: "/assets/img/javascript.png" },
+    name: "Javascript"
   },
   {
     percent: 50,
-    backgroundProgress: "#1976d0",
-    imageSrc: "/assets/img/typescript.png",
-    label: "Typescript"
+    backgroundProgress: {
+      hex: "#1976d0"
+    },
+    image: { url: "/assets/img/typescript.png" },
+    name: "Typescript"
   },
   {
     percent: 50,
-    backgroundProgress: "#8bb4ef",
-    imageSrc: "/assets/img/react.png",
-    label: "React.js"
+    backgroundProgress: {
+      hex: "#8bb4ef"
+    },
+    image: { url: "/assets/img/react.png" },
+    name: "React.js"
   },
   {
     percent: 50,
-    backgroundProgress: "#45ac51",
-    imageSrc: "/assets/img/node.png",
-    label: "Node.js"
+    backgroundProgress: {
+      hex: "#45ac51"
+    },
+    image: { url: "/assets/img/node.png" },
+    name: "Node.js"
   },
   {
     percent: 50,
-    backgroundProgress: "#f2501b",
-    imageSrc: "/assets/img/git.png",
-    label: "Git"
+    backgroundProgress: {
+      hex: "#f2501b"
+    },
+    image: { url: "/assets/img/git.png" },
+    name: "Git"
   }
 ];
