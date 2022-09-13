@@ -10,3 +10,4 @@ export { TextArea } from "./TextArea";
 export { Footer } from "./Footer";
 export { Projects } from "./Projects";
 export { NotFound } from "./NotFound";
+export { ProjectCard } from "./ProjectCard";
