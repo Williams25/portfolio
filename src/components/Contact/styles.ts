@@ -60,6 +60,23 @@ export const Contact = styled.div`
             flex-direction: column;
           }
         }
+
+        & button {
+          min-width: 120.917px;
+          max-height: 41px;
+          & svg {
+            animation: rotate 0.9s linear infinite;
+          }
+        }
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
       }
     }
 
