@@ -34,13 +34,13 @@ export const AnimatedCircularProgress = styled.div<AnimatedCircularProgressStyle
             position: absolute;
             width: 10px;
             height: 10px;
-            background-color: ${backgroundProgress};
+            background-color: ${backgroundProgress.hex};
             top: -5px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 50%;
-            box-shadow: 0 0 10px ${backgroundProgress},
-              0 0 20px ${backgroundProgress};
+            box-shadow: 0 0 10px ${backgroundProgress.hex},
+              0 0 20px ${backgroundProgress.hex};
           }
         }
 
@@ -61,7 +61,7 @@ export const AnimatedCircularProgress = styled.div<AnimatedCircularProgressStyle
 
             &:nth-child(2) {
               opacity: 0;
-              stroke: ${backgroundProgress};
+              stroke: ${backgroundProgress.hex};
               stroke-dasharray: 440;
               stroke-dashoffset: 440;
               animation: fadeInCircle 2s linear forwards;
@@ -75,7 +75,7 @@ export const AnimatedCircularProgress = styled.div<AnimatedCircularProgressStyle
           display: flex;
           align-items: center;
           justify-content: center;
-          color: ${backgroundProgress};
+          color: ${backgroundProgress.hex};
           animation: fadeIn 1s linear forwards;
           animation-delay: 2.5s;
           opacity: 0;
