@@ -4,7 +4,8 @@ export const Projects = styled.section`
   ${({ theme }) => css`
     padding: 80px 0;
     position: relative;
-    background-color: ${theme.background.black};
+    background: rgb(23, 15, 30) url("/assets/img/grain-dark.9d5983e6.png")
+      repeat scroll 0% 0%;
 
     display: flex;
     justify-content: center;
@@ -38,6 +39,18 @@ export const Projects = styled.section`
 
       @media (min-width: 768px) {
         width: 50%;
+      }
+    }
+    & .project-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      max-width: 1280px;
+      margin: 3rem auto 0;
+
+      @media (max-width: 1312px) {
+        max-width: 840px;
       }
     }
   `}
