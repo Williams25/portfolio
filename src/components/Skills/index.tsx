@@ -41,8 +41,8 @@ export const Skills = ({ skills }: SkillsProps) => {
               <AnimatedCircularProgress
                 percent={sk.percent}
                 backgroundProgress={sk.backgroundProgress}
-                imageSrc={sk.imageSrc}
-                label={sk.label}
+                image={sk.image}
+                name={sk.name}
               />
             </div>
           ))}
