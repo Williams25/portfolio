@@ -45,7 +45,10 @@ export const Button = styled.button<ButtonProps>`
   ${({ theme, variant, size, fullWidth, borderColor }) => css`
     cursor: pointer;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     user-select: none;
 
     text-transform: capitalize;
