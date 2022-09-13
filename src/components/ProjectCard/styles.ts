@@ -15,6 +15,13 @@ export const ProjectCard = styled.div`
       linear-gradient(rgb(124, 127, 255) 0%, rgb(64, 221, 255) 100%) repeat
       scroll 0% 0%;
 
+    @media (max-width: 420px) {
+      min-height: 150px;
+      & .image-box span {
+        min-height: 100% !important;
+      }
+    }
+
     & .image-box {
       position: absolute;
       top: 0;
