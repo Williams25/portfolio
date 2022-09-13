@@ -5,7 +5,9 @@ import { Header, Footer } from "src/components";
 import { GlobalStyle } from "src/styles/global";
 import theme from "src/styles/theme";
 import { ThemeProvider } from "styled-components";
-import { AnalyticsProvider } from "src/Contexts/AnalyticsProvider";
+import { AnalyticsProvider } from "src/contexts/AnalyticsProvider";
+import { client } from "src/graphql/apollo";
+import { ApolloProvider } from "@apollo/client";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -24,17 +26,19 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
 
-      <AnalyticsProvider>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <Head>
-            <title>Portfolio - Williams25</title>
-          </Head>
-          <Header />
-          <Component {...pageProps} />
-          <Footer />
-        </ThemeProvider>
-      </AnalyticsProvider>
+      <ApolloProvider client={client}>
+        <AnalyticsProvider>
+          <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <Head>
+              <title>Portfolio - Williams25</title>
+            </Head>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+          </ThemeProvider>
+        </AnalyticsProvider>
+      </ApolloProvider>
     </>
   );
 }
