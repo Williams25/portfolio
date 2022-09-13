@@ -146,17 +146,23 @@ export const Header = () => {
             <ul>
               <li>
                 <Link href="#">
-                  <a draggable={false}>Home</a>
+                  <a draggable={false} onClick={toggleMenu}>
+                    Home
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="#skills">
-                  <a draggable={false}>Skills</a>
+                  <a draggable={false} onClick={toggleMenu}>
+                    Skills
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="#projects">
-                  <a draggable={false}>Projects</a>
+                  <a draggable={false} onClick={toggleMenu}>
+                    Projects
+                  </a>
                 </Link>
               </li>
             </ul>
