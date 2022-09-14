@@ -34,11 +34,18 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
       query: getHome,
       variables: { id: process.env.NEXT_PUBLIC_HOME_ID }
     });
+    const noScriptRotateText = home.rotateText
+      .map(
+        (item, index) =>
+          `${item.text}${home.rotateText.length - 1 > index ? ", " : "."}`
+      )
+      .join("");
 
     return {
       props: {
         skills: home.skills,
         banner: {
+          noScriptRotateText,
           rotateText: home.rotateText,
           title: home.title,
           description: {

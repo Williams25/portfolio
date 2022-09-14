@@ -8,10 +8,16 @@ export type BannerProps = {
   rotateText: {
     text: string;
   }[];
+  noScriptRotateText: string;
   description: { text: string };
 };
 
-export const Banner = ({ rotateText, title, description }: BannerProps) => {
+export const Banner = ({
+  rotateText,
+  title,
+  description,
+  noScriptRotateText
+}: BannerProps) => {
   const [loopNum, setLoopNum] = useState<number>(0);
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
   const [text, setText] = useState<string>("");
@@ -61,12 +67,10 @@ export const Banner = ({ rotateText, title, description }: BannerProps) => {
 
             <h1>
               {title}{" "}
-              <span
-                className="txt-rotate"
-                data-rotate={JSON.stringify(toRotate)}
-              >
+              <span className="txt-rotate" data-rotate={noScriptRotateText}>
                 <span className="wrap" translate="no">
                   {text}
+                  <noscript>{noScriptRotateText}</noscript>
                 </span>
               </span>
             </h1>
