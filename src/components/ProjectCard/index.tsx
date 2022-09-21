@@ -25,6 +25,7 @@ export const ProjectCard = ({ title, link, image }: ProjectCardProps) => {
           width={400}
           height={200}
           objectFit="contain"
+          priority
         />
       </div>
 
