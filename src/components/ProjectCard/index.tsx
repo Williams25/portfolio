@@ -25,7 +25,9 @@ export const ProjectCard = ({ title, link, image }: ProjectCardProps) => {
           width={400}
           height={200}
           objectFit="contain"
-          priority
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL={image}
         />
       </div>
 
