@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const Banner = styled.section`
   ${({ theme }) => css`
-    margin-top: -85px;
+    margin-top: -100px;
     padding: 260px 0 100px 0;
     background-image: url("/assets/img/banner-bg.png");
     background-position: top center;
