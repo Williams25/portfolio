@@ -60,8 +60,8 @@ export const Header = styled.header<HeaderStyles>`
 
         & img {
           cursor: pointer;
-          min-width: 85px !important;
-          min-height: 25px !important;
+          min-width: 65px !important;
+          min-height: 65px !important;
         }
       }
       & .menu-items {

@@ -46,14 +46,17 @@ export default class MyDocument extends Document {
           <meta name="description" content="Portfolio - Williams25" />
           <meta
             property="og:image"
-            content="https://www.williams25.com/assets/img/logo.svg"
+            content="https://www.williams25.com/Logo_Responsivo/Negativo/Negativo.png"
           />
           <meta name="robots" content="index" />
 
           <link rel="canonical" href="https://www.williams25.com/" />
-          <link rel="icon" href="/assets/img/fav.svg" />
-          <link rel="icon" href="/assets/img/fav.svg" />
-          <link rel="apple-touch-icon" href="/assets/img/fav.png" />
+          <link rel="icon" href="Logo_Responsivo/Negativo/Negativo.png" />
+          <link rel="icon" href="Logo_Responsivo/Negativo/Negativo.png" />
+          <link
+            rel="apple-touch-icon"
+            href="Logo_Responsivo/Negativo/Negativo.png"
+          />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>

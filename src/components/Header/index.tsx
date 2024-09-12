@@ -61,10 +61,10 @@ export const Header = () => {
           <Link href="/#">
             <a aria-label="portfolio logo <wg />">
               <Image
-                src="/assets/img/logo.svg"
+                src="/Logo_Responsivo/Negativo/Negativo.png"
                 alt="portfolio logo <wg />"
-                width={85}
-                height={24}
+                width={60}
+                height={60}
               />
             </a>
           </Link>

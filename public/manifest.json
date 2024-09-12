@@ -3,12 +3,12 @@
   "short_name": "Portifolio - WG",
   "icons": [
     {
-      "src": "/assets/img/fav.svg",
+      "src": "Logo_Responsivo/Negativo/Negativo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/img/fav.svg",
+      "src": "Logo_Responsivo/Negativo/Negativo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
